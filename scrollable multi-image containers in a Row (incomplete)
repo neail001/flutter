@@ -35,7 +35,8 @@ class NewPages extends StatelessWidget {
             GestureDetector(
               onTap: (){Navigator.push(context, MaterialPageRoute(builder: (context) => ImagePage1()));},
               child: Container(
-                width: MediaQuery.of(context).size.width,
+                //width: MediaQuery.of(context).size.width,      //////////////this will look bad/good depending on your row size and design
+                // width: "specify YOUR DESIRED WIDTH FOR CONTAINER LIKE VIEW values with decimal points", hight: Same here,  ( delete the "//" to uncomment)
                 margin: EdgeInsets.symmetric(horizontal: 5.0),
                 decoration: BoxDecoration(color: Colors.blueAccent),
                 child: Image.network(imgList[0], fit: BoxFit.fill, ),
@@ -45,7 +46,8 @@ class NewPages extends StatelessWidget {
             GestureDetector(
               onTap: (){Navigator.push(context, MaterialPageRoute(builder: (context) => ImagePage2()));},
               child: Container(
-                width: MediaQuery.of(context).size.width,
+                 //width: MediaQuery.of(context).size.width,      //////////////this will look bad/good depending on your row size and design
+                // width: "specify YOUR DESIRED WIDTH FOR CONTAINER LIKE VIEW values with decimal points", hight: Same here,  ( delete the "//" to uncomment)
                 margin: EdgeInsets.symmetric(horizontal: 5.0),
                 decoration: BoxDecoration(color: Colors.blueAccent),
                 child: Image.network(imgList[3], fit: BoxFit.fill,),
